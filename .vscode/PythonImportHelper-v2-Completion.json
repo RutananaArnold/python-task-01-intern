@@ -1,0 +1,85 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SendMoney",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\ndb: List[User] = [\n    User(\n        id=1,\n        name=\"Arnold\",\n        balance=0\n    ),\n    User(\n        id=2,\n        name=\"Rutanana\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class User(BaseModel):\n    id: int\n    name: str\n    balance: int\nclass SendMoney(BaseModel):\n    balance: int",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "SendMoney",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class SendMoney(BaseModel):\n    balance: int",
+        "detail": "models",
+        "documentation": {}
+    }
+]
