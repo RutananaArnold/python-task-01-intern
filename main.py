@@ -22,6 +22,16 @@ db: List[User] = [
 async def fetch():
     return db
 
+@app.get('/api/user/fetch/{user_id}')
+async def fetchUser1(user_id: int):
+    for client in db:
+        if client.id == user_id:
+            return client.balance
+    raise HTTPException(
+        status_code=404,
+        detail=f"user with id: {user_id} does not exist"
+    )
+
 
 @app.put('/api/user/topup/{user_id}')
 async def topup(sendMoney: SendMoney, user_id: int):
