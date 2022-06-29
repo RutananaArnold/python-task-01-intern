@@ -1,0 +1,1 @@
+{"id":"80f5cfe5-a189-4194-8fe5-023935219600","space":25673,"runtime":"python3.9","name":"python_task_01_intern","path":"ve8yx5","project":"c0iqzxu8","account":"144798365827","region":"ap-southeast-1","deps":["fastapi"],"envs":null,"public":true,"log_level":"off","cron":""}
